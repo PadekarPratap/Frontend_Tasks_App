@@ -29,7 +29,7 @@ const TaskItem = ({ task }) => {
   }
 
   return (
-    <div className={`flex items-center justify-between mt-5 opacity-20 ${isCompleted && 'opacity-50'}`}>
+    <div className={`flex items-center justify-between mt-5 ${isCompleted && 'opacity-50'}`}>
       <div>
         <p className={`text-lg font-bold capitalize ${isCompleted && 'line-through'}`}>{title}</p>
         <p className="text-sm ">{description}</p>
