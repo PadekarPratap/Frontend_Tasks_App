@@ -84,9 +84,13 @@ const Home = () => {
     return (
       <>
         <div className="bg-gray-200 fixed inset-0"></div>
-        <span className="fixed z-[50] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase font-poppins">
+        <div className="fixed z-[50] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase font-poppins">
           Tasks App
-        </span>
+          <Oval className="mx-auto mt-5" stroke="#06bcee" />
+          <div className="text-center text-[#06bcee] text-lg mt-4 capitalize">
+          Loading...
+          </div>
+        </div>
       </>
     );
   }
