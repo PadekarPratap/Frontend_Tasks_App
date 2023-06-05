@@ -14,6 +14,7 @@ const TaskContent = ({ taskList }) => {
 
   return (
     <div>
+      {taskList.length === 0 && <p className="text-center tracking-widest text-xl ">No Tasks Found. Click on Add Task to add a new task.</p>}
       <div>
         {priorityTasks.length > 0 && (
           <div className="flex items-center gap-3">
